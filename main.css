@@ -5,6 +5,9 @@ body{
   position:relative;
   color:#444349;
 }
+
+/*HEADER*/
+
 .header{
   display: table;
   width:100vw;
@@ -22,41 +25,32 @@ body{
   text-align:center;
 }
 .keret{
-  color:white;
-  
+  color:hsla(0,0%,100%,.9);
   background-color:rgba(0,0,0,0.5);
   
   width:100vw;
   height:28rem;
-  line-height: 1.05;
+  line-height: 1.06;
+  
 }
 .title, .date{
-  font-size:3.44rem;
+  font-size:3.43rem;
   font-family: 'Libre Baskerville', serif;
-  padding-top:2.4rem;
-  letter-spacing:0.3rem;
-  margin-bottom:-1rem
+  padding-top:2.3rem;
+  letter-spacing:0.31rem;
+  margin-bottom:-0.9rem;
 }
-/*
-.title::after{
-  display:inline-block;
-  content:"";
-  border-bottom:2px solid white;
-  width:35rem;
-  
-}*/
+
 .name{
   font-family: 'Great Vibes', cursive;
   font-size: 8.2rem;
-  color: #d2ba87;
-  
-  
+  color: #d2ba87;  
 }
 .name:before{
   display: block;
   content:"";
   border-bottom:2px solid white;
-  width:33rem;
+  width:32.9rem;
   margin:3rem auto;
 }
 .date:before, .date:after{
@@ -67,5 +61,23 @@ body{
   width:4rem;
   
 }
-.date{
+@media(min-width:786px){
+  .wrapper{
+    background-position: center;
+  }
+  .keret{
+    width:49vw;
+    height:86vh;
+    margin:0 auto;
+    
+  
+  }
+  .title{
+text-transform: uppercase;  }
+  .title, .date{
+    font-size:1.5rem;
+  }
+  .name{
+    font-size:7rem;
+  }
 }
