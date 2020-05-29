@@ -1,12 +1,55 @@
-*{
+/*---------------
+
+GENERAL 
+
+------------------*/
+
+* {
   box-sizing: border-box;
 }
-body{
-  position:relative;
-  color:#444349;
+h1,h2{
+    font-family: 'Great Vibes', cursive;
+}
+h2{
+  font-size:3rem;
+  margin:1.4rem; 
+}
+h3{
+  font-size:1.5;
+}
+h1,h2,h3,
+ol,ul,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+.locations,
+.program,
+.gifts,
+.faq,
+.contact {
+  width: 95%;
+  margin: 1.4rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
 }
 
-/*HEADER*/
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;  
+  position:relative;
+  color:#444349;
+  text-align:center;
+}
+
+/*----------------
+
+      HEADER
+
+---------------*/
 
 .header{
   display: table;
@@ -16,51 +59,54 @@ body{
   background-position:70%;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 
   
 }
 .wrapper{
   display: table-cell;
   vertical-align: middle;
-  text-align:center;
 }
 .keret{
   color:hsla(0,0%,100%,.9);
-  background-color:rgba(0,0,0,0.5);
-  
-  width:100vw;
-  height:28rem;
-  line-height: 1.06;
+  background:hsla(100,0%,0%,0.5);
+  padding: .625rem;
+  margin: 0 auto;
   
 }
 .title, .date{
-  font-size:3.43rem;
+  font-size:1.25rem;
   font-family: 'Libre Baskerville', serif;
-  padding-top:2.3rem;
-  letter-spacing:0.31rem;
-  margin-bottom:-0.9rem;
+  letter-spacing:0.15rem;
+  margin:0;
 }
 
 .name{
-  font-family: 'Great Vibes', cursive;
-  font-size: 8.2rem;
-  color: #d2ba87;  
+  font-size: 3.15rem;
+  color: #d2ba87;
+  margin:0;
 }
-.name:before{
-  display: block;
-  content:"";
-  border-bottom:2px solid white;
-  width:32.9rem;
-  margin:3rem auto;
+.title:after{
+   display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.56rem;
+  margin: .5rem auto;
 }
 .date:before, .date:after{
   display:inline-block;
   vertical-align: middle;
   content:"";
-  border-bottom:2px solid white;
-  width:4rem;
-  
+  width:6.3vw;
+  height:0.0561rem;
+  background-color:white;
 }
+/*-------------
+
+MEDIA 786px
+
+--------*/
 @media(min-width:786px){
   .wrapper{
     background-position: center;
@@ -81,3 +127,102 @@ text-transform: uppercase;  }
     font-size:7rem;
   }
 }
+
+/*-------------
+
+LOCATIONS
+
+----------*/
+
+
+.locations p{
+  font-family: 'Muli', sans-serif;
+}
+
+
+.lochead{
+  font-weight:700;
+  font-size:1.5rem;
+}
+
+.locpic{
+  height: 7.5rem;
+}
+.ceremony:after,
+.photos:after,
+.party:after{
+  display:block;
+  content: "";
+  width:25vw;
+  margin:1.5rem auto;
+  height:0.1875rem;
+  background-color: #444349;
+}
+/*-------------
+
+PROGRAM
+
+-------------*/
+
+.progback{
+  background: hsla(100,0%,0%,.6);
+}
+.program{
+  width:100vw;
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+  margin-bottom:0;
+  
+}
+.program h2 {
+  margin-top: 1rem; 
+}
+.program p{
+  font-style: italic;
+}
+.program p,ul{
+  text-align:left;
+  
+}
+ol{  
+  margin:0;
+  letter-spacing: 0.025rem;
+
+}
+.progback {
+  width: 100vw;
+  text-align: left;
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+
+/*----------------------
+
+GIFTS
+
+------------------------*/
+
+#gift{
+  height:7.5rem
+}
+.gifts{
+margin-bottom:0;
+  margin-top:0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
