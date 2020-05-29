@@ -15,7 +15,7 @@ h2{
   margin:1.4rem; 
 }
 h3{
-  font-size:1.5;
+  font-size:1.5rem;
 }
 h1,h2,h3,
 ol,ul,
@@ -33,7 +33,15 @@ img {
   padding: .5rem 1rem;
   text-align: center;
 }
+a{
+  color:#bd806e;
+  text-decoration: none;
+}
+a:hover{
+  color:#eda087;
+  transition: color .15s ease-in-out;
 
+}
 body {
   background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
   font-family: 'Libre Baskerville', serif;
@@ -86,7 +94,7 @@ body {
   color: #d2ba87;
   margin:0;
 }
-.title:after{
+.title::after{
    display: block;
   content: "";
   background-color: #fff;
@@ -94,7 +102,7 @@ body {
   width: 12.56rem;
   margin: .5rem auto;
 }
-.date:before, .date:after{
+.date::before, .date::after{
   display:inline-block;
   vertical-align: middle;
   content:"";
@@ -148,14 +156,12 @@ LOCATIONS
 .locpic{
   height: 7.5rem;
 }
-.ceremony:after,
-.photos:after,
-.party:after{
+.event::after{
   display:block;
   content: "";
   width:25vw;
   margin:1.5rem auto;
-  height:0.1875rem;
+  height:0.188rem;
   background-color: #444349;
 }
 /*-------------
@@ -212,16 +218,85 @@ margin-bottom:0;
 }
 
 
+/*------------------
+
+FAQ
+
+----------------*/
 
 
+.faq{
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  margin-bottom:0;
+  width:100vw;
+}
 
+.faqhead{
+  margin:1.5rem auto;
+  margin-top:1rem;
+}
+.group p{
+  text-align: left;
+  font-family: 'Muli', sans-serif;  
+}
+.question{
+  margin-bottom:0.5rem;
+  font-weight: bold;
+  letter-spacing: 0.019rem;
+}
+.answer{
+  margin-bottom: 1.5rem;
+}
+.group{
+  padding-bottom:0;
+}
+.group::after{
+  display: block;
+  content: "";
+  width:50vw;
+  margin:1.5rem auto;
+  height:0.2rem;
+  background-color: #d2ba87;
+}
+/*----------------------
 
+CONTACT
 
+----------------*/
+.contact{
+  margin-top:0.3rem;
+}
 
+/*--------------------
 
+FOOTER
 
+----------------------*/
 
-
+footer{
+  background-color:#606060;
+  width:100vw;
+  height:10vh;
+  color: white;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .88rem;
+  padding-top:0.3rem;
+}
+.footer-wrapper{
+  display:table-cell;
+  vertical-align: medium;
+  padding:.5rem 1rem;
+  
+}
+footer small {
+  line-height: 1.5;
+}
+footer p {
+  margin-bottom: 0;
+}
 
 
 
