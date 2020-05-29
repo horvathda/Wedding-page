@@ -49,7 +49,6 @@ body {
   line-height: 1.5;
   color: #444349;  
   position:relative;
-  color:#444349;
   text-align:center;
 }
 
@@ -61,7 +60,7 @@ body {
 
 .header{
   display: table;
-  width:100vw;
+  width:100%;;
   height: 100vh;
   background-image: url(assets/wedding-landing-cover.jpg);
   background-position:70%;
@@ -106,7 +105,7 @@ body {
   display:inline-block;
   vertical-align: middle;
   content:"";
-  width:6.3vw;
+  width:1.5rem;
   height:0.0561rem;
   background-color:white;
 }
@@ -116,21 +115,14 @@ MEDIA 786px
 
 --------*/
 @media(min-width:786px){
-  .wrapper{
-    background-position: center;
-  }
   .keret{
-    width:49vw;
-    height:86vh;
-    margin:0 auto;
-    
-  
+    width:50%;
+    padding:1.3rem;
+    border-radius:4px;
   }
   .title{
 text-transform: uppercase;  }
-  .title, .date{
-    font-size:1.5rem;
-  }
+
   .name{
     font-size:7rem;
   }
@@ -166,22 +158,44 @@ LOCATIONS
 }
 /*-------------
 
+MEDIA 786px
+
+--------*/
+@media(min-width:786px){
+  .event::after{
+    display: none;
+  }
+  .event{
+    display:inline-block;
+    width:30%;
+    padding: 1.3rem;
+    margin: 0.5rem;
+  }
+  
+}
+/*-------------
+
 PROGRAM
 
 -------------*/
 
 .progback{
   background: hsla(100,0%,0%,.6);
-}
-.program{
-  width:100vw;
+  text-align: left;
   color: #d2ba87;
   font-family: 'Muli', sans-serif;
+  width:100%;
+}
+#prog{
+  text-align: center;
+  
+}
+.program{
   margin-bottom:0;
   
 }
 .program h2 {
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
 .program p{
   font-style: italic;
@@ -195,14 +209,20 @@ ol{
   letter-spacing: 0.025rem;
 
 }
-.progback {
-  width: 100vw;
-  text-align: left;
-  background: hsla(100,0%,0%,.6);
-  color: #d2ba87;
-  font-family: 'Muli', sans-serif;
-}
 
+
+/*-------------
+
+MEDIA 786px
+
+--------*/
+@media(min-width:786px){
+  .program{
+    width:30%;
+    margin:0 auto;
+  }
+    
+}
 /*----------------------
 
 GIFTS
@@ -213,7 +233,7 @@ GIFTS
   height:7.5rem
 }
 .gifts{
-margin-bottom:0;
+  margin-bottom:0;
   margin-top:0;
 }
 
@@ -229,7 +249,7 @@ FAQ
   background: hsla(100,0%,0%,.6);
   color: #d2ba87;
   margin-bottom:0;
-  width:100vw;
+  width:100%;
 }
 
 .faqhead{
@@ -259,6 +279,25 @@ FAQ
   height:0.2rem;
   background-color: #d2ba87;
 }
+/*-------------
+
+MEDIA 786px
+
+--------*/
+@media(min-width:786px){
+  .group::after{
+    display: none;
+  }
+  .group{
+    display: inline-block;
+    vertical-align: top;
+    margin:0.5rem;
+    text-align: left;
+    padding:1.5rem;
+    width:30%;
+  }
+  
+}
 /*----------------------
 
 CONTACT
@@ -276,28 +315,41 @@ FOOTER
 
 footer{
   background-color:#606060;
-  width:100vw;
+  width:100%;
   height:10vh;
   color: white;
   font-family: 'Muli', sans-serif;
   display: table;
   text-align: center;
   font-size: .88rem;
-  padding-top:0.3rem;
+
 }
 .footer-wrapper{
   display:table-cell;
-  vertical-align: medium;
-  padding:.5rem 1rem;
+  padding:0.5rem 1rem;
+  vertical-align: middle;
+
   
 }
 footer small {
   line-height: 1.5;
+  
 }
 footer p {
   margin-bottom: 0;
+  
 }
 
+/*-------------
+
+MEDIA 786px
+
+--------*/
+@media(min-width:786px){
+  footer{
+    min-height:7vh;
+  }
+}
 
 
 
